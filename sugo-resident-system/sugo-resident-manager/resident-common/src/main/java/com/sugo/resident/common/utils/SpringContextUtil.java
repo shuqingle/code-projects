@@ -1,4 +1,4 @@
-package com.sugo.resident.common.business.util;
+package com.sugo.resident.common.utils;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
