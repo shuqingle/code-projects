@@ -1,8 +1,8 @@
 package com.sugo.resident.common.utils;
 
 import com.sugo.resident.common.enumInfo.ResultCodeInfo;
-import com.sugo.resident.common.model.PageInfo;
-import com.sugo.resident.common.model.TableResponse;
+import com.sugo.resident.common.model.response.PageInfo;
+import com.sugo.resident.common.model.response.TableResponse;
 
 import java.util.List;
 

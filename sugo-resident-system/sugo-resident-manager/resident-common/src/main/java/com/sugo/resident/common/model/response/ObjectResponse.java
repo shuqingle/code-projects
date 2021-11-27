@@ -1,5 +1,7 @@
-package com.sugo.resident.common.model;
+package com.sugo.resident.common.model.response;
 
+
+import com.sugo.resident.common.model.response.BaseResponse;
 
 public class ObjectResponse<T> extends BaseResponse {
 	T data;

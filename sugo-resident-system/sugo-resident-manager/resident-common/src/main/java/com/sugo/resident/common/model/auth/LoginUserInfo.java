@@ -1,4 +1,4 @@
-package com.sugo.resident.common.model;
+package com.sugo.resident.common.model.auth;
 
 import lombok.Data;
 import lombok.ToString;

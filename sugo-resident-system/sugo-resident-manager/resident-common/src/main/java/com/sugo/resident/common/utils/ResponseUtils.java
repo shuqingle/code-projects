@@ -1,9 +1,9 @@
 package com.sugo.resident.common.utils;
 
 import com.sugo.resident.common.enumInfo.ResultCodeInfo;
-import com.sugo.resident.common.exception.ResultCodes;
-import com.sugo.resident.common.model.ObjectResponse;
-import com.sugo.resident.common.model.TableResponse;
+import com.sugo.resident.common.enumInfo.ResultCodeInterface;
+import com.sugo.resident.common.model.response.ObjectResponse;
+import com.sugo.resident.common.model.response.TableResponse;
 
 import java.util.List;
 
@@ -16,7 +16,7 @@ public class ResponseUtils {
         return new ObjectResponse(ResultCodeInfo.SUCCESS.code(),ResultCodeInfo.SUCCESS.message(),data);
     }
 
-    public static <T> TableResponse<T> tableSuccess(ResultCodes errorCodes, List<T> list){
+    public static <T> TableResponse<T> tableSuccess(ResultCodeInterface errorCodes, List<T> list){
         PageUtils<T> pu = new PageUtils<>();
         return pu.right(list);
     }

@@ -2,7 +2,7 @@ package com.sugo.resident.common.aspects;
 
 import com.google.gson.Gson;
 import com.sugo.resident.common.annotation.WebLog;
-import com.sugo.resident.common.model.BaseRequestDto;
+import com.sugo.resident.common.model.request.BaseRequestDto;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;

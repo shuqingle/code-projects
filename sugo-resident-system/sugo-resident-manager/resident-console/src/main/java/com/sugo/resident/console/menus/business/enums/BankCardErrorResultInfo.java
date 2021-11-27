@@ -1,8 +1,8 @@
 package com.sugo.resident.console.menus.business.enums;
 
-import com.sugo.resident.common.exception.ResultCodes;
+import com.sugo.resident.common.enumInfo.ResultCodeInterface;
 
-public enum BankCardErrorResultInfo implements ResultCodes {
+public enum BankCardErrorResultInfo implements ResultCodeInterface {
 	
     
 	

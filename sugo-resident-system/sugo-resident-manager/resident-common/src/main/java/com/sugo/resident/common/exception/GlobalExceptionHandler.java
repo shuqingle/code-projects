@@ -1,6 +1,6 @@
 package com.sugo.resident.common.exception;
 
-import com.sugo.resident.common.model.BaseResponse;
+import com.sugo.resident.common.model.response.BaseResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -19,9 +19,9 @@ public class GlobalExceptionHandler {
      * @param e
      * @return
      */
-    @ExceptionHandler(value = BusiException.class)
+    @ExceptionHandler(value = BusinessException.class)
     @ResponseBody
-    public BaseResponse bizExceptionHandler(HttpServletRequest req, BusiException e){
+    public BaseResponse bizExceptionHandler(HttpServletRequest req, BusinessException e){
         logger.error("发生业务异常！原因是：{}",e.getMessage());
         return new BaseResponse(e.getCode(),e.getMessage());
     }

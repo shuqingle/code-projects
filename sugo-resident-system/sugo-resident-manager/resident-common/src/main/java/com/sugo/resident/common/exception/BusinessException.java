@@ -1,20 +1,21 @@
 package com.sugo.resident.common.exception;
 
 
+import com.sugo.resident.common.enumInfo.ResultCodeInterface;
 
-public class BusiException extends RuntimeException{
+public class BusinessException extends RuntimeException{
     protected String code;
     protected String message;
 
-    public BusiException() {
+    public BusinessException() {
         super();
     }
-    public BusiException(String code, String message) {
+    public BusinessException(String code, String message) {
         this.code = code;
         this.message = message;
     }
 
-    public BusiException(ResultCodes errorCodes) {
+    public BusinessException(ResultCodeInterface errorCodes) {
         this.code = errorCodes.code();
         this.message = errorCodes.message();
     }

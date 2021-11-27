@@ -1,9 +1,7 @@
 package com.sugo.resident.common.enumInfo;
 
 
-import com.sugo.resident.common.exception.ResultCodes;
-
-public enum ResultCodeInfo implements ResultCodes {
+public enum ResultCodeInfo implements ResultCodeInterface {
 	
     
 	
