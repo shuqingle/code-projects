@@ -5,7 +5,7 @@ import com.sugo.resident.common.business.annot.BusiAutoWired;
 import com.sugo.resident.common.business.base.BusinessBase;
 import com.sugo.resident.common.enumInfo.ResultCodeInfo;
 import com.sugo.resident.common.utils.BusinessUtil;
-import com.sugo.resident.common.utils.SpringContextUtil;
+import com.sugo.resident.common.business.utils.SpringContextUtil;
 
 import java.lang.reflect.Field;
 
