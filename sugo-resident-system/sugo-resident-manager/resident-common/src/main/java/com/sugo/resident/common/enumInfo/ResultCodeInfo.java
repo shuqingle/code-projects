@@ -2,7 +2,8 @@ package com.sugo.resident.common.enumInfo;
 
 
 public enum ResultCodeInfo implements ResultCodeInterface {
-	
+	//==============系统错误==============
+	AUTO_SCAN_INJECT_ERROR("SYS-0001","自动注入错误！"),
     
 	
 	
