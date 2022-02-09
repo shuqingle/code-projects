@@ -10,10 +10,22 @@ var RUser = {
         //后台获取公钥
 
         //登录点击事件
-        this.userLogin();
+        this.userLoginEvent();
     },
 
-    userLogin : function(){
+
+
+
+
+
+
+
+
+
+
+
+    //登录点击事件
+    userLoginEvent : function(){
         $("#userLogin").bind("click",function(){
             var userName = $("#username").val();
             var passWord = $("#password").val();
@@ -25,7 +37,11 @@ var RUser = {
                 alert("密码不能为空")
                 return;
             }
+            RUser.userLoginApi(userName,passWord);
             location.href = "./index.html";
         })
+    },
+    userLoginApi : function(userName,passWord){
+
     }
 }
