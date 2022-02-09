@@ -27,6 +27,7 @@ var RUser = {
     //登录点击事件
     userLoginEvent : function(){
         $("#userLogin").bind("click",function(){
+            
             var userName = $("#username").val();
             var passWord = $("#password").val();
             if('' == userName || typeof userName == 'undefined'){
@@ -37,11 +38,15 @@ var RUser = {
                 alert("密码不能为空")
                 return;
             }
-            RUser.userLoginApi(userName,passWord);
+            var request = {
+                "userName":userName,
+                "passWord":passWord
+            }
+            RUser.userLoginApi(request);
             location.href = "./index.html";
         })
     },
-    userLoginApi : function(userName,passWord){
-
+    userLoginApi : function(request){
+        var param = JSON.stringify(request);
     }
 }
