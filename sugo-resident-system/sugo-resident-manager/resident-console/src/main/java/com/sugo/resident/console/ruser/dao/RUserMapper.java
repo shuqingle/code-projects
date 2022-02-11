@@ -2,6 +2,7 @@ package com.sugo.resident.console.ruser.dao;
 
 import com.sugo.resident.console.ruser.model.UserInfoDto;
 import com.sugo.resident.console.ruser.model.UserInfoVO;
+import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Repository;
  * @author lenovo
  *
  */
+@Mapper
 @Repository
 public interface RUserMapper{
 

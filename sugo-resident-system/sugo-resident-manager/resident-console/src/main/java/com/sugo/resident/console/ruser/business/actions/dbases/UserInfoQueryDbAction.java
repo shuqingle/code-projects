@@ -11,8 +11,8 @@ import com.sugo.resident.console.ruser.model.UserInfoDto;
 import com.sugo.resident.console.ruser.model.UserInfoVO;
 
 public class UserInfoQueryDbAction extends AbstractBusinessAction<UserInfoDto> {
-    @BusiAutoWired
-    private RUserMapper ruserMapper;
+//    @BusiAutoWired
+        private RUserMapper ruserMapper = SpringContextUtil.getBean(RUserMapper.class);
 
     public UserInfoQueryDbAction(BusinessBase<UserInfoDto> busi) throws Exception {
         super(busi);

@@ -23,7 +23,7 @@
 	</sql>
 
    <!-- 查询登录用户信息 -->
-   <select id="queryUserLoginInfo" parameterType="com.sugo.resident.console.ruser.model.UserInfoDto" resultMap="com.sugo.resident.console.ruser.model.UserInfoVO">
+   <select id="queryUserLoginInfo" parameterType="com.sugo.resident.console.ruser.model.UserInfoDto" resultMap="userInfoMap">
         SELECT
 		    <include refid="userInfoFields"/>
 		FROM
