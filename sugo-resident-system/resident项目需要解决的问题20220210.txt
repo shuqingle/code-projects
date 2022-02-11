@@ -1,0 +1,3 @@
+1-能不能去除conversion，因为很废
+
+2-跨dto的各个function或者action如何用
