@@ -14,7 +14,7 @@ public class UserTellerPassWordRightCheckAction extends AbstractBusinessAction<U
 
     @Override
     protected void createAction() throws Exception {
-        if(!this.data().getPassWord().equals(this.data().getUserInfoVO().getPassWord())){
+        if(!this.data().getPassWord().equals(this.data().getUserInfoVO().getTellerPassword())){
             BusinessUtil.stopBusiProcess(UserResultCodeInfo.USER_NO_PASS_WRONG_ERROR);
         }
     }

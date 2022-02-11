@@ -1,5 +1,8 @@
 package com.sugo.resident.console.ruser.service.impl;
 
+import com.sugo.resident.common.business.conversion.BusinessConversion;
+import com.sugo.resident.common.business.process.AbstractBusinessProcess;
+import com.sugo.resident.console.ruser.business.process.UserLoginProcess;
 import com.sugo.resident.console.ruser.model.UserInfoDto;
 import com.sugo.resident.console.ruser.model.UserInfoVO;
 import com.sugo.resident.console.ruser.service.RUserService;
@@ -22,6 +25,9 @@ public class RuserServiceImpl implements RUserService {
 
     @Override
     public UserInfoVO login(UserInfoDto userInfoDto) throws Exception {
-        return null;
+        //创建执行登录业务流程
+        AbstractBusinessProcess<UserInfoDto> process = new UserLoginProcess(userInfoDto);
+        //执行登录业务流程并返回用户信息
+		return process.executeWithResp().getUserInfoVO();
     }
 }

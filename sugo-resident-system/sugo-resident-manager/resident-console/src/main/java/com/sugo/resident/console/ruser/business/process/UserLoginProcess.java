@@ -1,7 +1,6 @@
 package com.sugo.resident.console.ruser.business.process;
 
 
-import com.sugo.resident.common.business.base.BusinessBase;
 import com.sugo.resident.common.business.process.AbstractBusinessProcess;
 import com.sugo.resident.console.ruser.business.actions.checks.UserTellerPassWordRightCheckAction;
 import com.sugo.resident.console.ruser.business.actions.dbases.UserInfoQueryDbAction;
@@ -9,8 +8,8 @@ import com.sugo.resident.console.ruser.business.functions.LoginUserBaseInfoCheck
 import com.sugo.resident.console.ruser.model.UserInfoDto;
 
 public class UserLoginProcess extends AbstractBusinessProcess<UserInfoDto> {
-    public UserLoginProcess(BusinessBase<UserInfoDto> busi) throws Exception {
-        super(busi);
+    public UserLoginProcess(UserInfoDto userInfoDto) throws Exception {
+        super(userInfoDto);
     }
 
     @Override

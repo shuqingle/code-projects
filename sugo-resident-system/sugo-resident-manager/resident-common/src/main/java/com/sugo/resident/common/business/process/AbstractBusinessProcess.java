@@ -1,13 +1,14 @@
 package com.sugo.resident.common.business.process;
 
 import com.sugo.resident.common.business.base.BusinessBase;
+import com.sugo.resident.common.business.conversion.BusinessConversion;
 
 
 public abstract class AbstractBusinessProcess <T>{
     protected BusinessBase<T> busi;
 
-    public AbstractBusinessProcess(BusinessBase<T> busi) throws Exception{
-        this.busi = busi;
+    public AbstractBusinessProcess(T t) throws Exception{
+        this.busi = new BusinessConversion(t);
         createProcess();
     }
 
