@@ -1,9 +1,7 @@
-package com.sugo.resident.console.ruser.business.enums;
+package com.sugo.resident.commonapi.enumInfo;
 
 
-import com.sugo.resident.commonapi.enumInfo.ResultCodeInterface;
-
-public enum UserResultCodeInfo implements ResultCodeInterface {
+public enum ResultCodeInfo implements ResultCodeInterface {
 	//==============系统错误==============
 	AUTO_SCAN_INJECT_ERROR("SYS-0001","自动注入错误！"),
     
@@ -29,7 +27,7 @@ public enum UserResultCodeInfo implements ResultCodeInterface {
 	
 	
 	
-	private UserResultCodeInfo(String code, String msg) {
+	private ResultCodeInfo(String code, String msg) {
 		this.code = code;
 		this.msg = msg;
 	}

@@ -1,8 +1,8 @@
 package com.sugo.resident.console.ruser.controller;
 
-import com.sugo.resident.common.annotation.WebLog;
-import com.sugo.resident.common.model.response.ObjectResponse;
-import com.sugo.resident.common.utils.ResponseUtils;
+import com.sugo.resident.commonapi.annotation.WebLog;
+import com.sugo.resident.commonapi.model.response.ObjectResponse;
+import com.sugo.resident.commonapi.utils.ResponseUtils;
 import com.sugo.resident.console.ruser.dao.RUserMapper;
 import com.sugo.resident.console.ruser.model.UserInfoDto;
 import com.sugo.resident.console.ruser.model.UserInfoVO;

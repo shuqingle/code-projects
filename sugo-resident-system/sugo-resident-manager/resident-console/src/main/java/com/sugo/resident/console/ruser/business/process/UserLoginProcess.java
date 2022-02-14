@@ -1,7 +1,7 @@
 package com.sugo.resident.console.ruser.business.process;
 
 
-import com.sugo.resident.common.business.process.AbstractBusinessProcess;
+import com.sugo.resident.commonapi.business.process.AbstractBusinessProcess;
 import com.sugo.resident.console.ruser.business.actions.checks.UserTellerPassWordRightCheckAction;
 import com.sugo.resident.console.ruser.business.actions.dbases.UserInfoQueryDbAction;
 import com.sugo.resident.console.ruser.business.functions.LoginUserBaseInfoCheckFunction;

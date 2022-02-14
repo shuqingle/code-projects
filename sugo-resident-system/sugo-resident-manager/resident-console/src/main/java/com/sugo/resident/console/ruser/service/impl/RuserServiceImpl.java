@@ -1,12 +1,13 @@
 package com.sugo.resident.console.ruser.service.impl;
 
-import com.sugo.resident.common.business.conversion.BusinessConversion;
-import com.sugo.resident.common.business.process.AbstractBusinessProcess;
+import com.sugo.resident.commonapi.business.process.AbstractBusinessProcess;
 import com.sugo.resident.console.ruser.business.process.UserLoginProcess;
+import com.sugo.resident.console.ruser.dao.RUserMapper;
 import com.sugo.resident.console.ruser.model.UserInfoDto;
 import com.sugo.resident.console.ruser.model.UserInfoVO;
 import com.sugo.resident.console.ruser.service.RUserService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -21,7 +22,8 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 @Slf4j
 public class RuserServiceImpl implements RUserService {
-
+    @Autowired
+    RUserMapper mapper;
 
     @Override
     public UserInfoVO login(UserInfoDto userInfoDto) throws Exception {

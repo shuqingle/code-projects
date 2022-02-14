@@ -1,6 +1,7 @@
 package com.sugo.resident.console.params.controller;
 
-import com.sugo.resident.common.utils.BusinessUtil;
+
+import com.sugo.resident.commonapi.utils.BusinessUtil;
 
 public class Test {
     public static void main(String[] args) {

@@ -1,8 +1,8 @@
 package com.sugo.resident.console.ruser.business.functions;
 
 
-import com.sugo.resident.common.business.base.BusinessBase;
-import com.sugo.resident.common.business.function.AbstractBusinessFunction;
+import com.sugo.resident.commonapi.business.base.BusinessBase;
+import com.sugo.resident.commonapi.business.function.AbstractBusinessFunction;
 import com.sugo.resident.console.ruser.business.actions.checks.UserTellerNoNotNullCheckAction;
 import com.sugo.resident.console.ruser.business.actions.checks.UserTellerPassWordNotNullCheckAction;
 import com.sugo.resident.console.ruser.model.UserInfoDto;

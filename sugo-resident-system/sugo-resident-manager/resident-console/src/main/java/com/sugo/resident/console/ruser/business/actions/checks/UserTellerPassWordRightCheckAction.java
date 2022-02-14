@@ -1,9 +1,9 @@
 package com.sugo.resident.console.ruser.business.actions.checks;
 
 
-import com.sugo.resident.common.business.action.AbstractBusinessAction;
-import com.sugo.resident.common.business.base.BusinessBase;
-import com.sugo.resident.common.utils.BusinessUtil;
+import com.sugo.resident.commonapi.business.action.AbstractBusinessAction;
+import com.sugo.resident.commonapi.business.base.BusinessBase;
+import com.sugo.resident.commonapi.utils.BusinessUtil;
 import com.sugo.resident.console.ruser.business.enums.UserResultCodeInfo;
 import com.sugo.resident.console.ruser.model.UserInfoDto;
 

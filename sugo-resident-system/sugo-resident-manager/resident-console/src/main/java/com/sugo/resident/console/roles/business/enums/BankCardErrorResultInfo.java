@@ -1,6 +1,7 @@
 package com.sugo.resident.console.roles.business.enums;
 
-import com.sugo.resident.common.enumInfo.ResultCodeInterface;
+
+import com.sugo.resident.commonapi.enumInfo.ResultCodeInterface;
 
 public enum BankCardErrorResultInfo implements ResultCodeInterface {
 	
