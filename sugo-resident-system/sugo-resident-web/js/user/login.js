@@ -11,6 +11,7 @@ var RUser = {
 
         //登录点击事件
         this.userLoginEvent();
+        
     },
 
 
@@ -28,25 +29,50 @@ var RUser = {
     userLoginEvent : function(){
         $("#userLogin").bind("click",function(){
             
-            var userName = $("#username").val();
-            var passWord = $("#password").val();
+            var userName = $("#username").val().trim();
+            var passWord = $("#password").val().trim();
             if('' == userName || typeof userName == 'undefined'){
                 alert("用户名不能为空")
+                return;
+            }
+            if(userName.length > 32 || userName.length < 6){
+                alert("用户名长度应在6-32之间")
                 return;
             }
             if('' == passWord || typeof passWord == 'undefined'){
                 alert("密码不能为空")
                 return;
             }
+            if(passWord.length > 32 || passWord.length < 6){
+                alert("密码长度应在6-32之间")
+                return;
+            }
+            //密码rsa加密
+            var PUBLIC_KEY = 'MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC8HMr2CBpoZPm3t9tCVlrKtTmI4jNJc7/HhxjIEiDjC8czP4PV+44LjXvLYcSV0fwi6nE4LH2c5PBPEnPfqp0g8TZeX+bYGvd70cXee9d8wHgBqi4k0J0X33c0ZnW7JruftPyvJo9OelYSofBXQTcwI+3uIl/YvrgQRv6A5mW01QIDAQAB';
+            var encrypt = new JSEncrypt();
+            encrypt.setPublicKey(PUBLIC_KEY);
+            var encPass = encrypt.encrypt(JSON.stringify(passWord));
             var request = {
                 "userName":userName,
-                "passWord":passWord
+                "passWord":encPass
             }
             RUser.userLoginApi(request);
-            location.href = "./index.html";
+            //跳转到首页
+            // location.href = "./index.html";
         })
     },
     userLoginApi : function(request){
         var param = JSON.stringify(request);
+        $.ajax({
+            url:"/sugo-resident-manager/sql/resident/sugo/console/ruser/login",
+            type:"post",
+            dataType:"json",
+            data:{
+                param
+            },
+            success:function(data){
+                 alert(data.msg);
+            }
+        });
     }
 }
