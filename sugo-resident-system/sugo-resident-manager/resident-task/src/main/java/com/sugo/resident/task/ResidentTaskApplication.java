@@ -1,4 +1,4 @@
-package com.sugo.resident.residenttask;
+package com.sugo.resident.task;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
