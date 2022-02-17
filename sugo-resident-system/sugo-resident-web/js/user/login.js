@@ -52,24 +52,23 @@ var RUser = {
             var encrypt = new JSEncrypt();
             encrypt.setPublicKey(PUBLIC_KEY);
             var encPass = encrypt.encrypt(JSON.stringify(passWord));
-            var request = {
-                "userName":userName,
-                "passWord":encPass
-            }
-            RUser.userLoginApi(request);
+            
+            RUser.userLoginApi(userName,encPass);
             //跳转到首页
             // location.href = "./index.html";
         })
     },
-    userLoginApi : function(request){
-        var param = JSON.stringify(request);
+    userLoginApi : function(userName,encPass){
+
         $.ajax({
-            url:"/sugo-resident-manager/sql/resident/sugo/console/ruser/login",
-            type:"post",
+            url:"/sql/resident/sugo/sugo-resident-manager/console/ruser/login",
+            type:"POST",
+            contentType: "application/json",
             dataType:"json",
-            data:{
-                param
-            },
+            data: JSON.stringify({
+                "tellerNo":userName,
+                "passWord":encPass
+            }),
             success:function(data){
                  alert(data.msg);
             }
