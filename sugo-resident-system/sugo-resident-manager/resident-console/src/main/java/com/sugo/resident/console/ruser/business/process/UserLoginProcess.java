@@ -16,10 +16,10 @@ public class UserLoginProcess extends AbstractBusinessProcess<UserInfoDto> {
     public void createProcess() throws Exception {
         //用户登录信息非空检查
         this.busi = new LoginUserBaseInfoCheckFunction(this.busi);
-        //查询数据库中用户是否存在
+        //数据库查询用户信息
         this.busi = new UserInfoQueryDbAction(this.busi);
-        //密码是否正确检查
+        //检查密码是否正确
         this.busi = new UserTellerPassWordRightCheckAction(this.busi);
-        //数据生成token
+        //生成token
     }
 }

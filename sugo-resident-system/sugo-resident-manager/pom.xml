@@ -5,6 +5,7 @@
     <modules>
         <module>resident-console</module>
         <module>resident-estates</module>
+        <module>resident-task</module>
         <module>commonApi</module>
     </modules>
     <parent>

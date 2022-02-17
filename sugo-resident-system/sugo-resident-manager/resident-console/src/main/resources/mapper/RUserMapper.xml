@@ -5,6 +5,7 @@
 	<resultMap id="userInfoMap" type="com.sugo.resident.console.ruser.model.UserInfoVO">
 		<result property="tellerNo" column="teller_no"/>
 		<result property="tellerName" column="teller_name"/>
+		<result property="tellerIdcard" column="teller_idcard"/>
 		<result property="instSeqNo" column="inst_seq_no"/>
 		<result property="phoneNo" column="phone_no"/>
 		<result property="tellerPassword" column="teller_password"/>
@@ -15,6 +16,7 @@
 	<sql id="userInfoFields">
 		teller_no,
 		teller_name,
+		teller_idcard
 		inst_seq_no,
 		phone_no,
 		teller_password,
