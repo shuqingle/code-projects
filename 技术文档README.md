@@ -22,3 +22,4 @@ code-projects
 	10）前台有短信验证码后存入到redis并设置超时时间3min，
 	11）定时任务使用springcloud自带的@Schedule注解实现
 	12）注册中心使用eureka
+	13）前台开发一个定时任务手动管理模块，控制手动触发定时任务
