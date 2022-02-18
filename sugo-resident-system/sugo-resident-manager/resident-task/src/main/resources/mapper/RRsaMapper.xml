@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.sugo.resident.console.ruser.dao.RUserMapper">
 	<!--人员字段属性映射-->
-	<resultMap id="userInfoMap" type="com.sugo.resident.console.ruser.model.UserInfoVO">
+	<resultMap id="rsaInfoMap" type="com.sugo.resident.console.ruser.model.UserInfoVO">
 		<result property="tellerNo" column="teller_no"/>
 		<result property="tellerName" column="teller_name"/>
 		<result property="tellerIdcard" column="teller_idcard"/>
