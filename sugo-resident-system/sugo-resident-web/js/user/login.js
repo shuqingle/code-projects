@@ -61,7 +61,7 @@ var RUser = {
     userLoginApi : function(userName,encPass){
 
         $.ajax({
-            url:"/sql/resident/sugo/sugo-resident-manager/console/ruser/login",
+            url:"/sql/resident/sugo/sugo-resident-console/console/ruser/login",
             type:"POST",
             contentType: "application/json",
             dataType:"json",
