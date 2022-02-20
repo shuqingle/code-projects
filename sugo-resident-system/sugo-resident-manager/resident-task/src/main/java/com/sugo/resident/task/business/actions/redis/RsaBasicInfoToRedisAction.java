@@ -3,13 +3,14 @@ package com.sugo.resident.task.business.actions.redis;
 import com.sugo.resident.commonapi.business.action.AbstractBusinessAction;
 import com.sugo.resident.commonapi.business.annot.BusiAutoWired;
 import com.sugo.resident.commonapi.business.base.BusinessBase;
+import com.sugo.resident.commonapi.business.utils.SpringContextUtil;
 import com.sugo.resident.commonapi.utils.RSAUtils;
 import com.sugo.resident.commonapi.utils.RedisUtil;
 import com.sugo.resident.task.model.RsaDTO;
 
 public class RsaBasicInfoToRedisAction extends AbstractBusinessAction<RsaDTO> {
-    @BusiAutoWired
-    private RedisUtil redisUtil;
+//    @BusiAutoWired
+    private RedisUtil redisUtil = SpringContextUtil.getBean(RedisUtil.class);
 
     public RsaBasicInfoToRedisAction(BusinessBase<RsaDTO> busi) throws Exception {
         super(busi);

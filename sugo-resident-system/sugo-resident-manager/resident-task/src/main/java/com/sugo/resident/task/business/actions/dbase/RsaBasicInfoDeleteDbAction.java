@@ -9,7 +9,7 @@ import com.sugo.resident.task.model.RsaDTO;
 
 public class RsaBasicInfoDeleteDbAction extends AbstractBusinessAction<RsaDTO> {
 //    @BusiAutoWired
-    private RRsaMapper rsaMapper = SpringContextUtil.getBean(RRsaMapper.class);
+    RRsaMapper rsaMapper = SpringContextUtil.getBean(RRsaMapper.class);
 
     public RsaBasicInfoDeleteDbAction(BusinessBase<RsaDTO> busi) throws Exception {
         super(busi);

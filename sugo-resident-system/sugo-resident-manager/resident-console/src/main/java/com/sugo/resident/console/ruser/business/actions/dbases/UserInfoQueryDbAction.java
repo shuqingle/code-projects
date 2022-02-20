@@ -1,6 +1,7 @@
 package com.sugo.resident.console.ruser.business.actions.dbases;
 
 import com.sugo.resident.commonapi.business.action.AbstractBusinessAction;
+import com.sugo.resident.commonapi.business.annot.BusiAutoWired;
 import com.sugo.resident.commonapi.business.base.BusinessBase;
 import com.sugo.resident.commonapi.business.utils.SpringContextUtil;
 import com.sugo.resident.commonapi.utils.BusinessUtil;
@@ -11,7 +12,7 @@ import com.sugo.resident.console.ruser.model.UserInfoVO;
 
 public class UserInfoQueryDbAction extends AbstractBusinessAction<UserInfoDto> {
 //    @BusiAutoWired
-    private RUserMapper ruserMapper = SpringContextUtil.getBean(RUserMapper.class);
+    RUserMapper ruserMapper = SpringContextUtil.getBean(RUserMapper.class);
 
     public UserInfoQueryDbAction(BusinessBase<UserInfoDto> busi) throws Exception {
         super(busi);

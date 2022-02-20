@@ -7,13 +7,13 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 //微服务必须扫描到commonApi的模块路径，否则无法获取对应的bean
 @SpringBootApplication(scanBasePackages = {"com.sugo.resident.console","com.sugo.resident.commonapi"})
 //@MapperScan("com.sugo.resident.console.ruser.dao")
-public class ResidentApplication extends SpringBootServletInitializer {
+public class ResidentConsoleApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
-        SpringApplication.run(ResidentApplication.class, args);
+        SpringApplication.run(ResidentConsoleApplication.class, args);
     }
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(ResidentApplication.class);
+        return builder.sources(ResidentConsoleApplication.class);
     }
 }

@@ -23,7 +23,7 @@ public class RsaKeyPairCreateProcess extends AbstractBusinessProcess<RsaDTO> {
         //生成封装rsa基础信息：密钥对及创建日期
         this.busi = new RsaBasicInfoPackAction(this.busi);
         //rsa信息数据库操作
-        this.busi = new RsaBasicInfoDbOprFunction(this.busi);
+//        this.busi = new RsaBasicInfoDbOprFunction(this.busi);
         //rsa信息redis操作
         this.busi = new RsaBasicInfoToRedisAction(this.busi);
 
