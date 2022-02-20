@@ -5,6 +5,11 @@ import lombok.Data;
 @Data
 public class RsaDTO {
     /**
+     * 任务标志
+     */
+    private String taskFlag;
+
+    /**
      * 密钥对生成日期
      */
     private String createDate ;
@@ -16,4 +21,6 @@ public class RsaDTO {
      * 私钥字符串
      */
     private String privateKey ;
+
+
 }
