@@ -1,8 +1,8 @@
-package com.sugo.resident.task.controller;
+package com.sugo.resident.task.rsa.controller;
 
 import com.sugo.resident.commonapi.annotation.WebLog;
-import com.sugo.resident.task.model.RsaDTO;
-import com.sugo.resident.task.service.RRsaService;
+import com.sugo.resident.task.rsa.model.RsaDTO;
+import com.sugo.resident.task.rsa.service.RRsaService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;

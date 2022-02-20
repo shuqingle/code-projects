@@ -1,6 +1,6 @@
-package com.sugo.resident.task.service;
+package com.sugo.resident.task.rsa.service;
 
-import com.sugo.resident.task.model.RsaDTO;
+import com.sugo.resident.task.rsa.model.RsaDTO;
 
 /**
  * RSA业务接口

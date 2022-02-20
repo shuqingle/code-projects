@@ -1,4 +1,4 @@
-package com.sugo.resident.task.model;
+package com.sugo.resident.task.rsa.model;
 
 import lombok.Data;
 

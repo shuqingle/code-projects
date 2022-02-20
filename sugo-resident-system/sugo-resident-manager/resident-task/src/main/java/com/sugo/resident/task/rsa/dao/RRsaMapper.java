@@ -1,6 +1,6 @@
-package com.sugo.resident.task.dao;
+package com.sugo.resident.task.rsa.dao;
 
-import com.sugo.resident.task.model.RsaDTO;
+import com.sugo.resident.task.rsa.model.RsaDTO;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 

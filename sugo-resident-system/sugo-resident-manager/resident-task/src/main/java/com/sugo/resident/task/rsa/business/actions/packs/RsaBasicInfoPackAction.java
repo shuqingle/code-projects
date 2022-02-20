@@ -1,10 +1,10 @@
-package com.sugo.resident.task.business.actions.packs;
+package com.sugo.resident.task.rsa.business.actions.packs;
 
 import com.sugo.resident.commonapi.business.action.AbstractBusinessAction;
 import com.sugo.resident.commonapi.business.base.BusinessBase;
 import com.sugo.resident.commonapi.utils.DateUtils;
 import com.sugo.resident.commonapi.utils.RSAUtils;
-import com.sugo.resident.task.model.RsaDTO;
+import com.sugo.resident.task.rsa.model.RsaDTO;
 import org.apache.tomcat.util.codec.binary.Base64;
 
 import java.security.KeyPair;

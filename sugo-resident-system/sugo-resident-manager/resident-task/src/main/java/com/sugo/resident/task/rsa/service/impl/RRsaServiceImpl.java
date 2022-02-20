@@ -1,9 +1,9 @@
-package com.sugo.resident.task.service.impl;
+package com.sugo.resident.task.rsa.service.impl;
 
 import com.sugo.resident.commonapi.business.process.AbstractBusinessProcess;
-import com.sugo.resident.task.business.process.RsaKeyPairCreateProcess;
-import com.sugo.resident.task.model.RsaDTO;
-import com.sugo.resident.task.service.RRsaService;
+import com.sugo.resident.task.rsa.business.process.RsaKeyPairCreateProcess;
+import com.sugo.resident.task.rsa.model.RsaDTO;
+import com.sugo.resident.task.rsa.service.RRsaService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

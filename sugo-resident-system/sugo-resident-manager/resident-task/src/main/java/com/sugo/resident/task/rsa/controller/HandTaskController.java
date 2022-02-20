@@ -1,10 +1,10 @@
-package com.sugo.resident.task.controller;
+package com.sugo.resident.task.rsa.controller;
 
 import com.sugo.resident.commonapi.annotation.WebLog;
 import com.sugo.resident.commonapi.model.response.ObjectResponse;
 import com.sugo.resident.commonapi.utils.ResponseUtils;
-import com.sugo.resident.task.model.RsaDTO;
-import com.sugo.resident.task.service.RRsaService;
+import com.sugo.resident.task.rsa.model.RsaDTO;
+import com.sugo.resident.task.rsa.service.RRsaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
