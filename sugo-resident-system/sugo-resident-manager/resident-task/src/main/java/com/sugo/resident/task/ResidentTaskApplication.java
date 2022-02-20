@@ -9,7 +9,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 //微服务必须扫描到commonApi的模块路径，否则无法获取对应的bean
 @SpringBootApplication(scanBasePackages = {"com.sugo.resident.task","com.sugo.resident.commonapi"})
-//@MapperScan("com.sugo.resident")
 @EnableScheduling
 public class ResidentTaskApplication extends SpringBootServletInitializer {
 
