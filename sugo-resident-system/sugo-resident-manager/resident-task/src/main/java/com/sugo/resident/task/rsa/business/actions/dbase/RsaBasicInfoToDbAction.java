@@ -8,7 +8,7 @@ import com.sugo.resident.task.rsa.dao.RRsaMapper;
 import com.sugo.resident.task.rsa.model.RsaDTO;
 
 public class RsaBasicInfoToDbAction extends AbstractBusinessAction<RsaDTO> {
-    @BusiAutoWired
+//    @BusiAutoWired
     private RRsaMapper rsaMapper = SpringContextUtil.getBean(RRsaMapper.class);
     public RsaBasicInfoToDbAction(BusinessBase<RsaDTO> busi) throws Exception {
         super(busi);

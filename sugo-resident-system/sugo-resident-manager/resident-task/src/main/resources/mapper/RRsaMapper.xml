@@ -11,7 +11,7 @@
 
 	<!--新增rsa记录-->
 	<insert id="addRsa" parameterType="com.sugo.resident.task.rsa.model.RsaDTO">
-		insert into deleteRsa
+		insert into tb_rsa_info
 		(
 			 create_date,
 			 public_key,
