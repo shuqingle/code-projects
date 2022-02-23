@@ -16,7 +16,7 @@
 	<sql id="userInfoFields">
 		teller_no,
 		teller_name,
-		teller_idcard
+		teller_idcard,
 		inst_seq_no,
 		phone_no,
 		teller_password,
